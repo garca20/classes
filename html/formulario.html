@@ -6,30 +6,38 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Hola bienvenidos a formularios</h1>
-        
-    <br></br>
-    <!--Inicio de formulario-->
+
+    <h1>Hola, bienvenidos a formularios</h1>
+    <h3>Por favor ingrese su información en los siguientes campos:</h3>
+    <p><small>Cabe recalcar que solo es una demostración y no recojo información.</small></p>
+
     <form action="">
         <fieldset>
             <legend>Información personal</legend>
             <label for="">Nombre:</label>
-            <input type="text">
+            <input type="text" name="username" autocomplete="off">
+            <input type="submit">
             <br></br>
-            <label for="">Apellido</label>
-            <input type="text">
+            <label for="">Apellido:</label>
+            <input type="text" name="lastname" autocomplete="off">
+            <input type="submit">
             <br></br>
-            <label for="">Contraseña</label>
-            <input type="password">
+            <label for="">Contraseña:</label>
+            <input type="password" name="password" autocomplete="off">
+            <input type="submit">
             <br></br>
+            <label for="">Fecha de nacimiento</label>
+            <input type="date" name="birthdate">
+            <input type="submit">
         </fieldset>
     </form>
-
+    <br></br>
     <form action="">
         <fieldset>
             <legend>Información laboral</legend>
             <label for="">Inicio de labores</label>
-            <input type="date">
+            <input type="date" name="startedworkingon">
+            <input type="submit">
             <br></br>
             <label for="">Área de trabajo</label>
             <select name="" id="">
@@ -40,7 +48,10 @@
             </select>
         </fieldset>
     </form>
+    <br></br>
+    <ul>
+        <li><a href="../index.html">Volver hacia atrás</a></li>
+    </ul>
 
-    <a href="../index.html">Volver a atrás</a>
 </body>
 </html>
