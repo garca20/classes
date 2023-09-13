@@ -1,0 +1,39 @@
+/* Importanción de tipografia */
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;900&display=swap');
+
+/* Selector universal */
+/* A todos los elementos una propiedad de css */
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Lato', sans-serif; */
+}
+
+/* Selector por etiqueta */
+span {
+    color: orangered;
+}
+
+/* Selector por id */
+/* Tienen prioridad sobre la clase */
+#option_one, #option_three {
+    font-weight: 900;
+    background-color: aquamarine;
+    margin-left: 20px;
+}
+
+/* Selector por clase */
+.options_group {
+    background-color: #000;
+}
+
+.options_group.other_option {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+/* Selector por atributo */
+[disabled] {
+    background-color: red;
+}
