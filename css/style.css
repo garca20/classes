@@ -37,3 +37,75 @@ span {
 [disabled] {
     background-color: red;
 }
+
+/* Selector por id */
+
+#title_box {
+    
+    color: rgb(38, 0, 255);
+    background-color: rgb(27, 216, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    /* Se centran textos con text align */
+    text-align: center;
+    text-transform: capitalize;
+    /* Margenes */
+    margin: 10px 20px 15px 25px;
+    border: 3px solid #000;
+    /* En vez de solid pueden usarse dotted, dashed, double, ridge, groove, inset, outset, none, hidden  */
+    border-radius: 1000px 1px;
+    /* Distancia del contenido  */
+    padding: 50px;
+    /* Espaciado de palabras y texto  */
+    word-spacing: 20px;
+    letter-spacing: 8px;
+    /* Tamaño de fuente */
+    font-size: 30px;
+    /* Sombras  */
+    box-shadow: 2px 0px 10px 5px #000fff;
+    box-shadow: 3px 8px 58px 99px rgba(0,0,0,0.75);
+    /* webkit y moz son los navegadores, Opera usa o e Internet explorer ms */
+    -webkit-box-shadow: 3px 8px 58px 99px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 8px 58px 99px rgba(0, 0, 0, 0.75);
+    
+    
+    /* Si padding tiene uno todos los rellenos valen 2em */
+    /* Si son solo dos, arriba y abajo valen a y derecha e izquierda valen b */
+    /* Con 3, arriba izquierda y derecha abajo */
+    /* Con 4, arriba derecha abajo izquierda */
+}
+
+#box_father {
+    background-color: #000;
+    width: 200px;
+    height: 200px;
+    
+    background-image: url(https://www.elespectador.com/resizer/lZcP_cqKxjBwScJGInZnNF6Oghc=/arc-anglerfish-arc2-prod-elespectador/public/SQT6VSTKY5ALBBK4QFI22JCWNY.jpg);
+    background-position: center;
+    background-size: 50%;
+}
+
+/* #box_model {
+    background-color: orange;
+    width: 50%;
+    height: 50%;
+} */
+
+/* Aplicación de media queries */
+@media (min-width: 800px) and (max-width: 1200px) {
+    body {
+        background-color: red;
+    }
+    #title_box {
+        text-align: left;
+    }
+}
+
+@media (min-width: 799px) {
+    body {
+        background-image: url(https://www.elespectador.com/resizer/lZcP_cqKxjBwScJGInZnNF6Oghc=/arc-anglerfish-arc2-prod-elespectador/public/SQT6VSTKY5ALBBK4QFI22JCWNY.jpg);
+        background-position: center;
+        background-size: cover;
+        /*  */
+        background-repeat: no-repeat;
+    }
+}
