@@ -109,3 +109,16 @@ span {
         background-repeat: no-repeat;
     }
 }
+
+/* Para selectores hijos
+
+a>b {
+
+} 
+
+Para selectores avanzados
+
+a b {
+
+}
+*/
